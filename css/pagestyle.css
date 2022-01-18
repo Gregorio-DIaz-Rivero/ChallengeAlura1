@@ -1,19 +1,34 @@
+body {
+    background-color: aquamarine;
+}
+
 footer {
     display: block;
     width: 100vw;
     background: black;
     color: lightgrey;
-    text-align: justify;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    height: 100px;
+}
+
+#author {
+    font-style: italic;
 }
 
 .card {
-    border: black 2px solid;
+    background-color: khaki;
     padding-left: 20px;
-    padding-right: 20px;
-    width: 150px;
     margin-top: 10px;
+    box-shadow: 2px 2px 5px grey;
 }
 
-#yo {
-    text-align: center;
+#input {
+    height: 70px;
+}
+
+#divResult {
+    width: 200px;
+    height: 100px;
 }

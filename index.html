@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>encrypter or decrypter a message</h1>
-    <div class="card" style="width: 18rem;">
+    <div class="card" id="input" style="width: 18rem;">
         <div class="card-body">
             <label class="card-title" for="message">Write your message
                 <input id="message">
@@ -17,21 +17,22 @@
             <button onclick="encrypt()">encrypt</button> <button onclick="decrypt()">decrypt</button>
         </div>
     </div>
-    <div class="card" hidden id="divResult">
+    <div class="card"  hidden id="divResult">
         <h4 id="titleCardResult"></h4>
         <div id="showresult">
             <label for="textResult">
-                <textarea id="textResult"></textarea>
+                <textarea id="textResult"></textarea> <br>
+                <button id="copy" onclick="copyText()">Copy</button>
             </label>
         </div>
     </div>
-    <div id="contenedor">
-        <footer>
-            <div id="yo">
-                <p>Gregorio Enrique Diaz Rivero</p>
-            </div>
-        </footer>
-    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           <p id="author">Author: Gregorio Enrique Diaz Rivero</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="js/encrypt_decrypt.js"></script>
 </body>
 </html>
