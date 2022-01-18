@@ -67,7 +67,7 @@ function decrypt() {
             textToDecrypt = textToDecrypt.replace("ufat", "u");
         }
         var textArea = document.getElementById("textResult");
-        textArea.innerHTML = encryptedWord;
+        textArea.innerHTML = textToDecrypt;
     } else {
         var textArea = document.getElementById("textResult");
         textArea.innerHTML = "you only can use lowercase leters";
