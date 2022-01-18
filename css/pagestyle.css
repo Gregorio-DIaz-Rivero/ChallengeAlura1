@@ -17,6 +17,15 @@ footer {
     font-style: italic;
 }
 
+button {
+    font-size: 16px;
+}
+
+label, h4 {
+    font-size: 22px;
+}
+
+
 .card {
     background-color: khaki;
     padding-left: 20px;
@@ -25,10 +34,10 @@ footer {
 }
 
 #input {
-    height: 70px;
+    height: 85px;
 }
 
 #divResult {
     width: 200px;
-    height: 100px;
+    height: 135px;
 }
