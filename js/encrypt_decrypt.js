@@ -1,6 +1,6 @@
 
 function check(string) {
-    var filtro = 'abcdefghijklmnñopqrstuvwxyz ';
+    var filtro = 'abcdefghijklmnñopqrstuvwxyz! ';
     var i = 0;
     var continueReading = true
     while (i<string.length && continueReading) {
@@ -9,6 +9,8 @@ function check(string) {
         }
         i++
     }
+    var textArea = document.getElementById("textResult");
+    textArea.innerHTML = "you only can use lowercase leters";
     return continueReading
 }
 
@@ -39,9 +41,6 @@ function encrypt() {
         }
         var textArea = document.getElementById("textResult");
         textArea.innerHTML = encryptedWord;
-    } else {
-        var textArea = document.getElementById("textResult");
-        textArea.innerHTML = "you only can use lowercase leters";
     }
 }
 
@@ -68,9 +67,6 @@ function decrypt() {
         }
         var textArea = document.getElementById("textResult");
         textArea.innerHTML = textToDecrypt;
-    } else {
-        var textArea = document.getElementById("textResult");
-        textArea.innerHTML = "you only can use lowercase leters";
     }
 }
 
