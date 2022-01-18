@@ -3,6 +3,7 @@ body {
 }
 
 footer {
+    padding-top: 10px;
     display: block;
     width: 100vw;
     background: black;
@@ -41,3 +42,9 @@ label, h4 {
     width: 200px;
     height: 135px;
 }
+
+#github {
+    width:30px;
+    height:30px;
+}
+
